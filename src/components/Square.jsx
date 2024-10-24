@@ -1,8 +1,9 @@
 import React from "react";
 
-function Square({ value, onSquareClick }) {
+function Square({ value, onSquareClick, isWinCol }) {
+    const squareClass = "square" + (isWinCol ? ' highlight' : '');
     return (
-        <button className="square" onClick={onSquareClick}>
+        <button className={squareClass} onClick={onSquareClick}>
             {value}
         </button>
     );

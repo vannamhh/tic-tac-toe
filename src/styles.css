@@ -71,6 +71,10 @@ body {
   width: 34px;
 }
 
+.highlight {
+  background-color:rgb(176, 247, 106);
+}
+
 .board-row:after {
   clear: both;
   content: '';
